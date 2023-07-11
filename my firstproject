@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian History</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+    <h1><span>I</span><font color="#ffffff">N</font><font color="#90EE90">D</font>IAN HISTORY</h1>
+    <h4>Timeline & Events</h4>
+        </div>
+        <ul class="navmenu">
+         <li><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT US</a></li>
+        <li><a href="#">PAGE</a></li>
+        <li><a href="#">BLOG</a></li>
+        <li><a href="#">TEAM</a></li>
+        </ul>
+        <div class="nav-icon">
+            <a href="#">Contact</a>
+        </div> 
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+<section>
+<div class="container">
+    <div class="timeline">
+        <ul>
+            <li>
+              <div class="timeline-content">
+                <h1>Heading 1</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                 Quia voluptatum tempore reiciendis commodi ad, non error cupiditate et expedita, 
+                 eius veniam quo distinctio temporibus iste recusandae nemo ut, placeat quos!</p>
+              </div>  
+            </li>
+            <li>
+                <div class="timeline-content">
+                  <h1>Heading 1</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                   Quia voluptatum tempore reiciendis commodi ad, non error cupiditate et expedita, 
+                   eius veniam quo distinctio temporibus iste recusandae nemo ut, placeat quos!</p>
+                </div>  
+              </li>
+              <li>
+                <div class="timeline-content">
+                  <h1>Heading 1</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                   Quia voluptatum tempore reiciendis commodi ad, non error cupiditate et expedita, 
+                   eius veniam quo distinctio temporibus iste recusandae nemo ut, placeat quos!</p>
+                </div>  
+              </li>
+              <li>
+                <div class="timeline-content">
+                  <h1>Heading 1</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                   Quia voluptatum tempore reiciendis commodi ad, non error cupiditate et expedita, 
+                   eius veniam quo distinctio temporibus iste recusandae nemo ut, placeat quos!</p>
+                </div>  
+              </li>
+        </ul>
+    </div>
+</div>
+</section>
+    
+</body>
+</html>
+
+
+
+----------------------------------------------csss---------------------------------------------------------------------------
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    background-color: #0B2447;
+}
+header{
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+   justify-content: space-between;
+   padding: 20px 10%;
+   color: white;
+}
+.logo h1 span{
+color: orange;
+}
+.navmenu{
+    display: flex;
+}
+.navmenu li a{
+ padding: 10px 20px;
+align-items: center;
+justify-content: space-between;
+color: aliceblue;
+}
+.navmenu li a:hover{
+    color: #9DB2BF;
+}
+.nav-icon a{
+    display: inline-flex;
+    margin:2px 2px;
+    padding: 10px;
+    color: black;
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: #9DB2BF;
+    font-weight: 500;
+}
+.nav-icon a:hover{
+
+    transition: all 0.42s ease-out;
+    transform: scale(1.1);
+}
+
+#menu-icon{
+font-size: 35px;
+    color: white;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+}
+.timeline{
+    width: 50%;
+    height: auto;
+    max-width: 800px;
+    position: relative;
+    background-color: #2d5be2;
+}
+.timeline ul li{
+    padding: 20px;
+    background-color: #2d5be2;
+    color: aliceblue;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.timeline ul li .timeline-content{
+    background-color: #2d5be2;
+}
