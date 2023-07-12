@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+header{
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+   justify-content: space-between;
+   padding: 20px 10%;
+   color: white;
+   background-color: #0B2447;
+}
+.logo h1 span{
+color: orange;
+}
+.navmenu{
+    display: flex;
+}
+.navmenu li a{
+ padding: 10px 20px;
+align-items: center;
+justify-content: space-between;
+color: aliceblue;
+}
+.navmenu li a:hover{
+    color: #9DB2BF;
+}
+.nav-icon a{
+    display: inline-flex;
+    margin:2px 2px;
+    padding: 10px;
+    color: black;
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: #9DB2BF;
+    font-weight: 500;
+}
+.nav-icon a:hover{
+
+    transition: all 0.42s ease-out;
+    transform: scale(1.1);
+}
+
+#menu-icon{
+font-size: 35px;
+    color: white;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+section{
+    background-color: #0B2447;
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+}
+.timeline{
+    width: 50%;
+    height: auto;
+    max-width: 800px;
+    position: relative;
+   
+}
+
+
+.timeline h3{
+    position: relative;
+    font-size: 30px;
+    margin-top: 100px;
+    margin-bottom: 75px;
+    padding: 50px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.timeline ul li{
+
+    margin-top: 0;
+    padding: 20px 30px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    margin-bottom: 20px; 
+    position: relative;
+    
+}
+.timeline ul li:last-child{
+    margin-bottom: 0;
+}
+
+.timeline-content h1{
+font-size: 20px;
+font-weight: 500;
+line-height: 30px;
+margin-bottom: 10px;
+}
+
+.timeline-content p{
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+@media only screen and (min-width:760px){
+    .timeline::before{
+        content: '';
+        position: absolute;
+        width: 4px;
+        height: 100%;
+        top: 300px;
+        background-color: aliceblue;
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+    .timeline ul li{
+        width: 50%;
+        margin-bottom: 50px;
+        position: relative;
+    }
+    .timeline ul li:nth-child(odd){
+        float: left;
+        clear: right;
+        transform: translateX(-30px);
+        border-radius: 20px 0px 20px 20px;
+    }
+    .timeline ul li:nth-child(even){
+        float: right;
+        clear: left;
+        transform: translateX(30px);
+        border-radius: 0px 20px 20px 20px;
+    }
+
+.timeline ul li::after{
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: rgba(220, 11, 216, 0.918);
+    border-radius: 50%;
+    top: 0;
+}
+.timeline ul li:nth-child(odd)::after{
+    transform: translate(50%,-50%);
+    right: -30px;
+   
+}
+.timeline ul li:nth-child(even)::after{
+    transform: translate(-50%,-50%);
+    left: -30px;
+}
+
+@media (max-width:940px) {
+    .header{
+        padding: 20px 3%;
+        transition: .3s;
+    }
+
+} 
+
+@media(max-width:1140px){
+    .home{
+        grid-template-columns: 1fr;
+        height: 100%;
+    }
+
+ header.sticky{
+    background-color: #fff;
+    padding:20px 3%;
+    box-shadow: 0 0 10px rgb(0 0 0 /10%);
+}
+.home-text{
+    padding-top: 50px;
+   text-align: center;
+   justify-content: space-around;
+}
+section{
+padding: 90px 3%;
+}
+.home-image{
+    width: 100%;
+    max-width: 600px;
+}
+.home-image{
+    text-align: center;
+
+}
+}
+}
+@media(max-width:850px) {
+    #menu-icon{
+        display: block;
+    }
+    .navmenu{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 300px;
+        height: 400px;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: all 0.42s ease;
+    }
+    .navmenu a{
+        display: block;
+      margin: 20px;
+      color: #fff;
+    }
+    .navmenu a:hover{
+        color: rgb(100, 94, 94);
+    }
+    .navmenu.open{
+        right: 0;
+    }
+    
+}
