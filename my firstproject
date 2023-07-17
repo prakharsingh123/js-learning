@@ -162,6 +162,3 @@ font-size: 35px;
     border-radius: 10px;
     margin-bottom: 20px;
 }
-.timeline ul li .timeline-content{
-    background-color: #2d5be2;
-}
